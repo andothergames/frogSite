@@ -1,0 +1,172 @@
+/*selecter in pink*/
+/*font names with more than one word need to be surrounded by quotes*/
+/* use em to resize relative to the size of the font. 1em means equal to the current font size*/
+
+
+body {
+    font-family: "Andale Mono", monospace;
+    background-color: #a5face;
+    color: darkgreen;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 40pt;
+    border-style: solid;
+    border-width: 6px;
+    border-color: #529c6b;
+    border-radius: 8px;
+    margin: 12px;
+    padding: 20px;
+
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    color: deeppink;
+}
+
+h6 {
+    position: relative;
+    text-align: center;
+    color: deeppink;
+}
+
+/*class with a dot before it*/
+
+.menu {
+    display: inline-block;
+}
+
+.center {
+    text-align: center;
+}
+
+.otra {
+    background-color: aliceblue;
+    color: dimgrey;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #cb81f0;
+    border-radius: 6px;
+    margin: 20px;
+    padding: 6px;
+
+}
+
+.flip {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.important {
+    color: mediumpurple;
+
+}
+
+.cling {
+    display: block;
+    margin-left: auto;
+}
+
+#menuList {
+    overflow: hidden;
+    list-style-type: none;
+    background-color: aliceblue;
+    border-style: solid;
+    border-width: 2px;
+    border-color: aliceblue;
+    border-radius: 6px;
+    margin: 20px;
+    padding: 6px;
+}
+
+li a {
+    list-style-type: none;
+    float: left;
+    /*this makes things next to each other*/
+    border-left: solid;
+    border-color: white;
+    display: block;
+    color: darkcyan;
+    padding: 14px;
+    text-decoration: none;
+
+}
+
+li a:hover {
+    background-color: #529c6b;
+    color: deeppink;
+}
+
+.active {
+    background-color: black;
+    color: crimson;
+}
+
+/*dunno why this doesn't work on the dropdown*/
+label {
+    font-family: "Andale Mono", monospace;
+    color: #529c6b;
+
+}
+
+blockquote {
+    background-color: aliceblue;
+    color: deeppink;
+}
+
+
+
+/* # for an ID can only be used on one item*/
+#standOut {
+    font-size: 20pt;
+    font-family: "Brush Script MT", cursive;
+    color: #cb81f0;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.container {
+    overflow: auto;
+    background-color: blueviolet;
+    color: antiquewhite;
+    padding: 20px;
+    padding-top: 5px;
+}
+
+#imageRight {
+    float: right;
+    padding: 10px;
+    margin-left: 20px;
+    border-style: solid;
+    border-color: black;
+}
+
+#imageLeft {
+    float: left;
+    padding: 10px;
+    margin-right: 20px;
+    border-style: solid;
+    border-color: black;
+}
+
+/*gallery stuff*/
+
+.flexContainer {
+    justify-content: space-around;
+    align-content: space-around;
+    background-color: orange;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    margin-left:5%;
+    margin-right:5%;
+    padding:10px;
+
+
+}
+
+.image {
+    padding:2px;
+}
