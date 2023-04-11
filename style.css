@@ -1,29 +1,85 @@
+
+/* ----NOTES---- */
 /*selecter in pink*/
+/* .classes and #IDs in green */
 /*font names with more than one word need to be surrounded by quotes*/
-/* use em to resize relative to the size of the font. 1em means equal to the current font size*/
+/* use em to resize relative to the size of the font*/
+
+
+/*----COLOUR PALETTE----*/
+/* LIGHTER BORDER GREEN #72c4a4;
+TEXT COLOUR DARK GREEN
+LIMEY YELLOW INFO #eaff96; 
+
+*/
+
+
+
+/*contentMajority*/
+
+
+@font-face {
+    font-family: 'goFrog';
+    src:url(goFrog.ttf);  
+  }
 
 
 body {
     font-family: "Andale Mono", monospace;
     background-color: #a5face;
     color: darkgreen;
-    margin-left: 10%;
-    margin-right: 10%;
     margin-top: 40pt;
     border-style: solid;
     border-width: 6px;
-    border-color: #529c6b;
+    border-color: #72c4a4;
     border-radius: 8px;
-    margin: 12px;
+    margin: 20px;
     padding: 20px;
-
 }
 
+.content {
+    max-width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*---TODO work on colour of hyperlinks*/
+a {
+    text-decoration: none;
+    color: darkpink;
+}
+
+
+.frogTable{
+    text-align: center;
+    max-width: 1000;
+
+
+}
+/*hTags*/
+
 h1 {
-    position: relative;
+    /* position: relative; */
     text-align: center;
     color: deeppink;
 }
+
+h2 {
+    font-family: "Andale Mono", monospace;
+    font-size: 1.5em;
+    position: relative;
+    color: #ff8317
+    
+}
+
+h3 {
+    font-family: "Andale Mono", monospace;
+    font-size: 1.2em;
+    position: relative;
+    color: #ff9717;
+}
+
+
 
 h6 {
     position: relative;
@@ -31,7 +87,16 @@ h6 {
     color: deeppink;
 }
 
-/*class with a dot before it*/
+#hello {
+    font-family:"goFrog";
+    font-size: 1.5em;
+    color: #cb81f0;
+
+}
+
+
+/*menuBar*/
+
 
 .menu {
     display: inline-block;
@@ -41,32 +106,6 @@ h6 {
     text-align: center;
 }
 
-.otra {
-    background-color: aliceblue;
-    color: dimgrey;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #cb81f0;
-    border-radius: 6px;
-    margin: 20px;
-    padding: 6px;
-
-}
-
-.flip {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-}
-
-.important {
-    color: mediumpurple;
-
-}
-
-.cling {
-    display: block;
-    margin-left: auto;
-}
 
 #menuList {
     overflow: hidden;
@@ -76,9 +115,12 @@ h6 {
     border-width: 2px;
     border-color: aliceblue;
     border-radius: 6px;
-    margin: 20px;
+    margin-top: 6px;
+    margin-bottom: 6px;
     padding: 6px;
 }
+
+
 
 li a {
     list-style-type: none;
@@ -90,7 +132,6 @@ li a {
     color: darkcyan;
     padding: 14px;
     text-decoration: none;
-
 }
 
 li a:hover {
@@ -98,26 +139,43 @@ li a:hover {
     color: deeppink;
 }
 
-.active {
+.menuList.active {
     background-color: black;
     color: crimson;
 }
 
+
+/*sort this bit out*/
+
+.expandContainer{
+    background-color: aliceblue;
+    color: #9E65BA;
+    border-style:outset;
+    border-color: #cb81f0;
+    border-width: 4px;
+    border-radius: 6px;
+    padding: 6px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+
+
 /*dunno why this doesn't work on the dropdown*/
 label {
+    align-content:center;
     font-family: "Andale Mono", monospace;
     color: #529c6b;
-
-}
-
-blockquote {
-    background-color: aliceblue;
-    color: deeppink;
 }
 
 
+.source {
+    text-decoration: none;
+    text-align: right;
+    font-size: 0.8em;
+}
 
-/* # for an ID can only be used on one item*/
+
 #standOut {
     font-size: 20pt;
     font-family: "Brush Script MT", cursive;
@@ -127,31 +185,8 @@ blockquote {
 }
 
 
-.container {
-    overflow: auto;
-    background-color: blueviolet;
-    color: antiquewhite;
-    padding: 20px;
-    padding-top: 5px;
-}
+/*-------page2 GALLERY PAGE-------*/
 
-#imageRight {
-    float: right;
-    padding: 10px;
-    margin-left: 20px;
-    border-style: solid;
-    border-color: black;
-}
-
-#imageLeft {
-    float: left;
-    padding: 10px;
-    margin-right: 20px;
-    border-style: solid;
-    border-color: black;
-}
-
-/*gallery stuff*/
 
 .flexContainer {
     justify-content: space-around;
@@ -170,3 +205,45 @@ blockquote {
 .image {
     padding:2px;
 }
+
+/*-------page3 INFO PAGE-------*/
+
+.infoContainer {
+    overflow: auto;
+    background-color: #eaff96;
+    border-style: solid;
+    border-color: #eaff96;
+    border-radius: 6px;
+    color:darkgreen;
+    padding: 20px;
+    padding-top: 5px;
+} 
+
+/* .textRight {
+
+}
+
+.textLeft {
+    
+} */
+
+.imageRight {
+    float: right;
+    /* padding: 10px; */
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-style:outset;
+    border-color: #ff9717;
+    border-radius:6px;
+}
+
+.imageLeft {
+    float: left;
+    /* padding: 10px; */
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-style:outset;
+    border-color: #ff9717;
+    border-radius:6px;
+}
+
