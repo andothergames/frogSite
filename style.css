@@ -20,8 +20,15 @@ LIMEY YELLOW INFO #eaff96;
 
 @font-face {
     font-family: 'goFrog';
-    src:url(goFrog.ttf);  
+    src:url(fonts/goFrog.ttf);  
+}
+@font-face {
+
+    font-family: 'amphibia';
+    src:url(fonts/amphibia.ttf);
   }
+
+
 
 
 body {
@@ -35,6 +42,13 @@ body {
     border-radius: 8px;
     margin: 20px;
     padding: 20px;
+}
+
+#important {
+    font-family: "amphibia";
+    font-size: 60pt;
+    color:black;
+
 }
 
 .content {
@@ -62,6 +76,7 @@ h1 {
     /* position: relative; */
     text-align: center;
     color: deeppink;
+    font-family:"goFrog";
 }
 
 h2 {
