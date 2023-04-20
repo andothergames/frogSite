@@ -1,0 +1,288 @@
+
+/* ----NOTES---- */
+/*selecter in pink*/
+/* .classes and #IDs in green */
+/*font names with more than one word need to be surrounded by quotes*/
+/* use em to resize relative to the size of the font*/
+
+
+/*----COLOUR PALETTE----*/
+/* LIGHTER BORDER GREEN #72c4a4;
+TEXT COLOUR DARK GREEN
+LIMEY YELLOW INFO #eaff96; 
+
+*/
+
+/* TODO  */
+/* Border image repeat
+Tidy and fix menu colours and end no border 
+Different fonts?
+Sort footer padding/margins
+Photoshop style blend modes*/
+
+
+
+
+
+/*contentMajority*/
+
+@font-face {
+    font-family: 'goFrog';
+    src:url(fonts/goFrog.ttf);  
+}
+@font-face {
+
+    font-family: 'amphibia';
+    src:url(fonts/amphibia.ttf);
+  }
+
+body {
+    font-family: "Andale Mono", monospace;
+    background-color: #a5face;
+    color: darkcyan;
+}
+
+
+.content {
+    max-width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 20pt;
+    margin-bottom: 0pt;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #72c4a4;
+    border-radius: 8px;
+    padding: 20px;
+    padding-bottom: 4px;
+
+}
+
+/*---TODO work on colour of hyperlinks*/
+ a {
+    text-decoration: none;
+    color: darkpink;
+} 
+
+
+.frogTable{
+    text-align: center;
+    max-width: 1000;
+}
+
+
+/*HTAGS*/
+h1 {
+    /* position: relative; */
+    text-align: center;
+    color: #cb81f0;
+    font-family:"goFrog";
+}
+
+h2 {
+    font-family: "Andale Mono", monospace;
+    font-size: 1.5em;
+    position: relative;
+    color: #ff8317
+}
+
+h3 {
+    font-family: "Andale Mono", monospace;
+    font-size: 1.2em;
+    position: relative;
+    color: #ff9717;
+}
+
+
+h6 {
+    position: relative;
+    text-align: center;
+    color: darkcyan;
+}
+
+#hello {
+    font-family:"goFrog";
+    font-size: 1.5em;
+    color: #cb81f0;
+}
+
+/*This will need changing to a class*/
+#important {
+    font-family: "amphibia";
+    font-size: 40pt;
+    color:#72c4a4;
+    text-align: center;
+    mix-blend-mode: luminosity;
+    margin:0pt;
+}
+
+#standOut {
+    font-size: 20pt;
+    font-family: "Brush Script MT", cursive;
+    color: #cb81f0;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*menuBar*/
+
+
+.menu {
+    display: inline-block;
+}
+
+.center {
+    text-align: center;
+}
+
+
+#menuList {
+    overflow: hidden;
+    list-style-type: none;
+    max-width:1040px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: aliceblue;
+    border-style: solid;
+    border-width: 2px;
+    border-color: aliceblue;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-bottom: 6px;
+    padding: 6px;
+}
+
+
+li a {
+    list-style-type: none;
+    float: left;
+    /*this makes things next to each other*/
+    border-right: solid;
+    border-color: #72c4a4;
+    display: block;
+    color: darkcyan;
+    padding: 14px;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    background-color: #72c4a4;
+    color: aliceblue;
+}
+
+li a:active {
+    color: deeppink;
+}
+
+
+/*EXPAND CONTAINER*/
+.expandContainer{
+    background-color: aliceblue;
+    color: #9E65BA;
+    border-style:outset;
+    border-color: #cb81f0;
+    border-width: 4px;
+    border-radius: 6px;
+    padding: 6px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+
+/*DROPDOWN*/
+.dropdown{
+    background-color: aliceblue;
+    color: #9E65BA;
+    border-style:outset;
+    border-color: #cb81f0;
+    border-width: 4px;
+    border-radius: 6px;
+    padding: 6px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+
+/*FOOTER*/
+.source {
+    text-decoration: none;
+    max-width: 1040px;
+    margin-right:auto;
+    margin-left:auto;
+    font-size: 0.8em;
+    text-align: right;
+    padding-top:4px;
+}
+
+
+
+
+
+
+
+/*-------page2 GALLERY PAGE-------*/
+
+
+.flexContainer {
+    justify-content: space-around;
+    align-content: space-around;
+    background-color: orange;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    margin-left:5%;
+    margin-right:5%;
+    padding:10px;
+    bottom-padding:0px;
+
+
+}
+
+.image {
+    padding:2px;
+}
+
+/*-------page3 INFO PAGE-------*/
+
+.infoContainer {
+    overflow: auto;
+    background-color: #eaff96;
+    border-style: solid;
+    border-color: #eaff96;
+    border-radius: 8px;
+    color:darkgreen;
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom:0px;
+} 
+
+/* .textRight {
+
+}
+
+.textLeft {
+    
+} */
+
+.imageRight {
+    float: right;
+    /* padding: 10px; */
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-style:outset;
+    border-color: #ff9717;
+    border-radius:6px;
+}
+
+.imageLeft {
+    float: left;
+    /* padding: 10px; */
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-style:outset;
+    border-color: #ff9717;
+    border-radius:6px;
+}
+
