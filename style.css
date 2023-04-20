@@ -33,7 +33,7 @@ Photoshop style blend modes*/
 @font-face {
 
     font-family: 'amphibia';
-    src:url(fonts/amphibia.ttf);
+    src:url(fonts/amphibia.TTF);
   }
 
 body {
