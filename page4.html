@@ -33,18 +33,46 @@
         <td width="60%"><h1>&#128056; Q U I Z &#128056;</h1>
         <h6>(help me i'm scared)</h6>
         </td>
-        <td width="20%"><a id="flippedHomeFrog" href="myWebsite.html"><img src="assets/flippedHomeFrog.png" alt="frog" width="80%"></a></td>
+        <td width="20%"><a id="flippedHomeFrog" href="myWebsite.html"><img src="assets/flippedHomefrog.png" alt="frog" width="80%"></a></td>
     </tr>
 </table>
 
-    <p>Quiz stuff here</p>
+    <h2>How much of a frog are you?</h2>
 
     <!--text input-->
     <form name ="Quiz">
     
-    <label for="name">What is your name: </label><input type="text" name="name" size="30">
+    <label for="name">What is your name? </label><input type="text" name="name" size="30">
 
     <!--radio buttons-->
+
+    <p>You fancy a sit down and pick...</p>
+    <input type="radio" name="sit" value="3">
+    <label for="100%">A lily pad</label><br>
+    <input type="radio" name="sit" value="0">
+    <label for="20%">A human chair</label><br>
+    <input type="radio" name="sit" value="2">
+    <label for="0%">A rock or the floor will do</label><br><br>
+
+    <p>Where do you hang out in the winter?</p>
+    <input type="radio" name="winter" value="0">
+    <label for="100%">Indoors keeping dry and cosy</label><br>
+    <input type="radio" name="winter" value="1">
+    <label for="20%">I am partial to leaving the house and touching grass</label><br>
+    <input type="radio" name="winter" value="3">
+    <label for="0%">In pond mud or under piles of rotting leaves</label><br><br>
+
+    <p>Your hands and feet are...</p>
+    <input type="radio" name="handsfeet" value="0">
+    <label for="100%">Hands and feet</label><br>
+    <input type="radio" name="handsfeet" value="1">
+    <label for="20%">Webbed</label><br>
+    <input type="radio" name="handsfeet" value="3">
+    <label for="0%">It depends</label><br><br>
+
+
+<!------------------------->
+
     <p>How interested are you in frogs?</p>
     <input type="radio" name="interest" value="100%">
     <label for="100%">100% Dead into frogs</label><br>
@@ -57,7 +85,7 @@
 
     <!--numerical input-->
     <label for="talent">
-        What percentage of businesses report the lack if experienced and quality talent as the biggest productivity challenge:(correct answer is 50)</label><br><br>
+       This is an example of a numerical input (correct answer is 50)</label><br><br>
         <input type="number" name="talent" min="0" max="100" step="10">
     </form>
 
@@ -67,7 +95,7 @@
      <p class="dropdown">
         <label for="frogs"> </label>
             <select name="frogs" id="frogs">
-                <option disabled selected value>please pick a frog</option>
+                <option disabled selected value>please pick a frog (this does not effect your results)</option>
                 <option value="frog1">American Bullfrog</option>
                 <option value="frog2">Red-eyed tree frog</option>
                 <option value="frog3">Tree Frog</option>
@@ -77,13 +105,13 @@
                 <option value="frog7">Northern leopard frog</option>
                 <option value="frog8">Golden poison frog</option>
             </select>
-            <input type="submit" value="Submit">
+            
     </p>
 
     <!-- slider -->
     <p><label for="slider">How much did you enjoy this quiz?</label>
         <input type="range" id="slider" name="slider"
-               min="0" max="10"></p>
+               min="0" max="2"></p>
 
     <br>
     <!--button-->
