@@ -1,4 +1,4 @@
-# frogSite2
+# frogSite
 This is the website I have created for the madLab intro to development course.
 
 ###Markdown guide
