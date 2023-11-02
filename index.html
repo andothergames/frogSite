@@ -6,27 +6,16 @@
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+    <script src="sketch.js"></script>
 </head>
 
 
 <body>
 
-     <!--Navigation Menu-->
-     <ul id="menuList">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="page2.html">GALLERY</a></li>
-        <li><a href="page3.html">INFO</a></li>
-        <li><a href="page4.html">JAVASCRIPT</a></li>
-        <li><a href="https://www.google.com/search?q=frogs" target="_blank">GOOGLE</a></li>
-    </ul>
-    <div class="content">
 
-   
 
-    <!--main title-->
-    <!--frogs refreshes page-->
-
-    <table class="frogTable">
+    <!--<table class="frogTable">
         <tr>
             <td width="20%"><a id="homeFrog" href="index.html"><img src="assets/homeFrog.png" alt="chill frog facing left" width="80%"></a></td>
             <td width="60%"><h1>&#128056; F R O G S &#128056;</h1>
@@ -39,12 +28,10 @@
     <p id = "important">ACABEHLTWX</p>
     
 
-
-    <!--intro text-->
     <p><div id="hello"> H E L L O</div>
     Here is a website about frogs. With some information about the frogs and a few multimedia items, also about the frogs. I am kind of running out of content to put here and I've also gone too far down the frog hole in making this website a bit too much about frogs. Oh well, I have done it now and it looks like I like frogs way more than I do but that is OK, I have made peace with that. Enjoy my website I hope you enjoy the greeness of it all. Good day.</p>
 
-    <!--expanding facts-->
+
     <div class="expandContainer">
         <details>
         <summary>Expand for frog facts that may or may not be true:</summary>
@@ -63,93 +50,86 @@
     </details>
     </div>
 
-
-     
-
+frog emoji -= &#128056;-->
 
 
-    <!-- FOOTER -->
-    <!-- PROGRESS BAR -->
+     <section class="wrapper">
+        <section class="header">
+            <p id = "important">ACABEHLTWX</p>
+
+        </section>
+        <section class="borderRight">
+            
+        </section>
+
+        <section class="title">
+            <h1> F R O G S </h1>
+        </section>
+
+
+        <section class="borderLeft">
+            
+        </section>
+
+        <section class="gallery">
+            <section class="clickZone"><a class="button" href="pages/gallery.html">GALLERY</a>
+                <img class="star" src="stars/star17.png" width="80px">
+                </section>
+        </section>
+
+        <section class="about">
+            <section class="clickZone"><a class="button" href="pages/info.html">ABOUT</a>
+            <img class="star" src="stars/star1.png" width="80px">
+            </section>
+            
+        </section>
+
+        <section class="frog">
+            <div id="myFrog"></div>
+        </section>
+
+        <section class="info">
+            <section class="clickZone"><a class="button" href="pages/game.html">GAME</a>
+            <img class="star" src="stars/star12.png" width="80px">
+            </section>
+        </section>
+
+        <section class="quiz">
+            <section class="clickZone"><a class="button" href="pages/quiz.html">QUIZ</a>
+                <img class="star" src="stars/star9.png" width="80px">
+            </section>
+        </section>
+
+        <section class="audio">
+            <!--<p class="center">
+                <audio controls autoplay loop>
+                    <source src="sounds/rainforest.mp3" class="audioplayer" type="audio/mp3">
+                </audio></p>-->
+        </section>
+
+
+
+     </section>
+
+
     <div class="footer">
     <p class="center">How complete is this website?</p>
-    <p class="center"><progress id="progress" value="30" max="100">
+    <p class="center"><progress id="progress" value="40" max="100">
     </p>
-    <!-- AUDIO PLAYER -->
-    <p class="center">
-        <audio controls autoplay loop>
-            <source src="sounds/rainforest.mp3" class="audioplayer" type="audio/mp3">
-        </audio>
 
-    <!-- standOut ID EXAMPLE -->
+    
+
+    <!-- standOut ID EXAMPLE 
     <p id="standOut">I'm not even that into frogs x</p>
     </div>
 </div>
 
 
 <div class="source">Info taken from: <a href="https://www.amnh.org/exhibitions/frogs-a-chorus-of-colors/frog-fun-facts#:~:text=Frogs%20have%20excellent%20night%20vision,the%20food%20down%20its%20throat" target="_blank">this questionable website</a></div>
-
+-->
 </body>
 
 </html>
 
 
 
-<!-- 
-<section class="container">
-    <div class="slider-wrapper">
-        <div class="slider">
-            <img id="slide-1" src="me and nelson.jpeg" alt = "Two bros shooting the shit">
-            <img id="slide-2" src="me and kim.jpeg" alt = "Quick game of ball with the homies">
-            <img id="slide-3" src="me at nasa.jpeg" alt="at my former day job">
-        </div>
-        <div class="slider-nav">
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
-        </div>
-    </div> -->
-
-
-    <!-- .slider-wrapper {
-    position:relative;
-    max-width:100%;
-    margin: 0 auto;
-}
-
-.slider {
-    display:flex;
-    aspect-ratio: 16/9;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25)
-}
-
-.slider img {
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    object-fit: cover;
-}
-
-.slider-nav {
-    display: flex;
-    column-gap: 1rem;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-.slider-nav a {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color:antiquewhite;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
-}
-
-.slider-nav a:hover {
-    opacity:1;
-} -->
